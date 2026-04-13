@@ -2,7 +2,9 @@
 
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { respectedContributors } from '@/lib/data';
+import { fadeInUp, staggerContainer, staggerItem, hoverLift } from '@/lib/animations';
 
 export function RespectedContributors() {
   const [activeTab, setActiveTab] = useState<'recent' | 'generous'>('recent');
@@ -26,9 +28,12 @@ export function RespectedContributors() {
     <section className="py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Title */}
-        <h2 className="text-center font-serif text-5xl font-bold text-[#1a1a2e] sm:text-6xl">
+        <motion.h2 
+          {...fadeInUp}
+          className="text-center font-serif text-5xl font-bold text-[#1a1a2e] sm:text-6xl"
+        >
           Respected Contributors
-        </h2>
+        </motion.h2>
 
         {/* Tabs */}
         <div className="mt-12 flex justify-center gap-4">
@@ -63,11 +68,20 @@ export function RespectedContributors() {
         {/* Carousel */}
         <div className="relative mt-12">
           {/* Cards Container */}
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <motion.div 
+            className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"
+            variants={staggerContainer}
+            initial="initial"
+            whileInView="whileInView"
+            viewport={{ once: true }}
+          >
             {visibleItems.map((contributor, index) => (
-              <div
+              <motion.div
                 key={`${contributor.name}-${index}`}
-                className="rounded-2xl bg-[#e8d899] p-6 shadow-lg transition-transform hover:scale-105"
+                variants={staggerItem}
+                whileHover={{ scale: 1.05, y: -8 }}
+                transition={{ type: 'spring', stiffness: 300, damping: 10 }}
+                className="rounded-2xl bg-[#e8d899] p-6 shadow-lg"
               >
                 <div className="flex items-start gap-4">
                   <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white font-bold text-[#8b3a1f]">
@@ -79,9 +93,9 @@ export function RespectedContributors() {
                     <p className="text-xs text-[#9d6d4d]">{contributor.time}</p>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
+                </motion.div>
+              ))}
+            </motion.div>
 
           {/* Navigation Arrows */}
           <button

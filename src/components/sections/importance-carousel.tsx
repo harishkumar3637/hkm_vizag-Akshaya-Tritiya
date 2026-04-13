@@ -3,7 +3,9 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { importanceCarouselItems } from '@/lib/data';
+import { fadeInUp, carouselSlide, hoverScale, staggerContainer, staggerItem } from '@/lib/animations';
 
 export function ImportanceCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,14 +36,21 @@ export function ImportanceCarousel() {
     <section className="relative bg-gradient-to-b from-[#ffe8cc] to-[#ffd9a8] px-4 py-16 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl">
         {/* Title */}
-        <h2 className="text-center font-serif text-4xl font-bold text-[#6b1f1f] sm:text-5xl">
+        <motion.h2 
+          {...fadeInUp}
+          className="text-center font-serif text-4xl font-bold text-[#6b1f1f] sm:text-5xl"
+        >
           Akshaya Tritiya Importance
-        </h2>
+        </motion.h2>
 
         {/* Description */}
-        <p className="mx-auto mt-4 max-w-3xl text-center text-lg text-[#6b1f1f] sm:text-xl">
+        <motion.p 
+          {...fadeInUp}
+          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
+          className="mx-auto mt-4 max-w-3xl text-center text-lg text-[#6b1f1f] sm:text-xl"
+        >
           Akshaya Tritiya is an auspicious day praised in scriptures. Donations made today bring divine blessings, prosperity, and spiritual growth.
-        </p>
+        </motion.p>
 
         {/* Decorative divider */}
         <div className="flex justify-center pt-8">
@@ -69,11 +78,20 @@ export function ImportanceCarousel() {
             </button>
 
             {/* Carousel items */}
-            <div className="grid w-full grid-cols-1 gap-6 px-4 sm:grid-cols-2 lg:grid-cols-4">
+            <motion.div 
+              className="grid w-full grid-cols-1 gap-6 px-4 sm:grid-cols-2 lg:grid-cols-4"
+              variants={staggerContainer}
+              initial="initial"
+              whileInView="whileInView"
+              viewport={{ once: true }}
+            >
               {visibleItems.map((item, index) => (
-                <div
+                <motion.div
                   key={index}
-                  className="overflow-hidden rounded-2xl bg-white shadow-lg transition-transform duration-300 hover:scale-105"
+                  variants={staggerItem}
+                  whileHover={{ scale: 1.05, y: -10 }}
+                  transition={{ type: 'spring', stiffness: 300, damping: 10 }}
+                  className="overflow-hidden rounded-2xl bg-white shadow-lg"
                 >
                   {/* Image container */}
                   <div className="relative h-72 w-full overflow-hidden rounded-t-2xl bg-gray-200">
@@ -95,9 +113,9 @@ export function ImportanceCarousel() {
                       <ChevronRight size={20} className="flex-shrink-0 text-[#6b1f1f]" />
                     </button>
                   </div>
-                </div>
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
 
             {/* Next Button */}
             <button

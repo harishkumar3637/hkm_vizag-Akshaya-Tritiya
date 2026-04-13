@@ -3,9 +3,11 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Grid3x3, List } from "lucide-react";
+import { motion } from "framer-motion";
 
 import { akshayaTritiyaDaan } from "@/lib/data";
 import { Button } from "@/components/ui/button";
+import { fadeInUp, staggerContainer, staggerItem } from "@/lib/animations";
 
 export function AkshayaTritiyaDaan() {
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
@@ -13,7 +15,10 @@ export function AkshayaTritiyaDaan() {
   return (
     <section className="py-[72px] sm:py-[88px]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mb-10 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
+        <motion.div 
+          {...fadeInUp}
+          className="mb-10 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center"
+        >
           <div className="rounded-full bg-[#fde9bf] px-6 py-3">
             <h2 className="font-serif text-2xl font-bold text-[#6e2918]">AKSHAYA TRITIYA DAAN</h2>
           </div>
@@ -36,19 +41,26 @@ export function AkshayaTritiyaDaan() {
               <Grid3x3 className="h-5 w-5" />
             </Button>
           </div>
-        </div>
+        </motion.div>
 
-        <div
+        <motion.div
           className={
             viewMode === "grid"
               ? "grid gap-6 md:grid-cols-2 lg:grid-cols-3"
               : "space-y-4"
           }
+          variants={staggerContainer}
+          initial="initial"
+          whileInView="whileInView"
+          viewport={{ once: true }}
         >
           {akshayaTritiyaDaan.map((item) => (
-            <div
+            <motion.div
               key={item.title}
-              className="group overflow-hidden rounded-3xl bg-white shadow-sm transition-all duration-300 hover:shadow-lg"
+              variants={staggerItem}
+              whileHover={{ scale: 1.02, y: -5 }}
+              transition={{ type: 'spring', stiffness: 300, damping: 10 }}
+              className="group overflow-hidden rounded-3xl bg-white shadow-sm hover:shadow-lg"
             >
               <div className="flex flex-col sm:flex-row">
                 <div className="relative h-48 w-full sm:h-auto sm:w-48 flex-shrink-0">
@@ -73,9 +85,9 @@ export function AkshayaTritiyaDaan() {
                   </Button>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
         <div className="mt-16 flex items-center justify-center gap-4 text-[#a1672e]">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent to-[#a1672e]/30" />
