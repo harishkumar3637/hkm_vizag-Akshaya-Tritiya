@@ -76,6 +76,39 @@ export const recentDonors = [
   { name: "Ankit Goyal", amount: 2100, time: "58 min ago" },
 ];
 
+export const akshayaTritiyaDaan = [
+  {
+    title: "Akshaya Tritiya Seva",
+    image:
+      "https://images.unsplash.com/photo-1585521537854-ad159a1f1df1?auto=format&fit=crop&w=400&q=80",
+  },
+  {
+    title: "Gau Seva",
+    image:
+      "https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=400&q=80",
+  },
+  {
+    title: "Mandir Nirman Seva",
+    image:
+      "https://images.unsplash.com/photo-1563953971-ab6dc87a9f0d?auto=format&fit=crop&w=400&q=80",
+  },
+  {
+    title: "Chandan Alankar Seva",
+    image:
+      "https://images.unsplash.com/photo-1585521537854-ad159a1f1df1?auto=format&fit=crop&w=400&q=80",
+  },
+  {
+    title: "Khichdi Vitaran Seva",
+    image:
+      "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80",
+  },
+  {
+    title: "Annadana Seva",
+    image:
+      "https://images.unsplash.com/photo-1517244683847-7456b63c5969?auto=format&fit=crop&w=400&q=80",
+  },
+];
+
 export const templeInfo = {
   title: "Gupt Vrindavan Dham",
   phone: "+91-97999 99881",
