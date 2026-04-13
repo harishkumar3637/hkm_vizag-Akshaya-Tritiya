@@ -8,3 +8,5 @@
 {"timestamp":"00:02:33.751","source":"Server","level":"LOG","message":"✓ Compiled in 42ms"}
 {"timestamp":"00:02:40.171","source":"Server","level":"LOG","message":"✓ Compiled in 84ms"}
 {"timestamp":"00:02:50.132","source":"Server","level":"LOG","message":"  Reload env: .env.development.local"}
+{"timestamp":"00:05:24.579","source":"Server","level":"LOG","message":"✓ Compiled in 52ms"}
+{"timestamp":"00:05:32.057","source":"Server","level":"LOG","message":"✓ Compiled in 73ms"}

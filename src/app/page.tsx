@@ -1,6 +1,7 @@
 import { AkshayaTritiyaDaan } from "@/components/sections/akshaya-tritiya-daan";
 import { AkshayaTritiyaSection } from "@/components/sections/akshaya-tritiya-section";
 import { BenefitsSection } from "@/components/sections/benefits-section";
+import { DonationForm } from "@/components/sections/donation-form";
 import { DonorList } from "@/components/sections/donor-list";
 import { Footer } from "@/components/sections/footer";
 import { HeroSection } from "@/components/sections/hero-section";
@@ -17,6 +18,7 @@ export default function HomePage() {
       <AkshayaTritiyaDaan />
       <BenefitsSection />
       <SevaGrid />
+      <DonationForm />
       <ImpactSection />
       <DonorList />
       <Footer />
