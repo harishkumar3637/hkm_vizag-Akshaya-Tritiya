@@ -136,6 +136,81 @@ export const importanceCarouselItems = [
   },
 ];
 
+export const respectedContributors = [
+  {
+    name: "Yogya Modi",
+    amount: 140000,
+    time: "about 2 years ago",
+    avatar: "Y",
+  },
+  {
+    name: "Akshat Punjlaut",
+    amount: 85000,
+    time: "over 1 year ago",
+    avatar: "A",
+  },
+  {
+    name: "akshay ghugal",
+    amount: 75000,
+    time: "4 months ago",
+    avatar: "a",
+  },
+  {
+    name: "Shivam Gupta",
+    amount: 52040,
+    time: "12 months ago",
+    avatar: "S",
+  },
+  {
+    name: "ABHISHEK RANJAN",
+    amount: 50000,
+    time: "3 months ago",
+    avatar: "A",
+  },
+  {
+    name: "Ravi Krishnamoorthy",
+    amount: 50000,
+    time: "about 1 year ago",
+    avatar: "R",
+  },
+  {
+    name: "Kapil Vidhani",
+    amount: 52040,
+    time: "12 months ago",
+    avatar: "K",
+  },
+  {
+    name: "Dayanidhi Mishra",
+    amount: 51100,
+    time: "about 1 year ago",
+    avatar: "D",
+  },
+  {
+    name: "Mrs Vasantben Natwarlal Tailo",
+    amount: 35000,
+    time: "4 months ago",
+    avatar: "M",
+  },
+  {
+    name: "Atul Kumar Tawakley",
+    amount: 33673,
+    time: "about 1 year ago",
+    avatar: "A",
+  },
+  {
+    name: "Anand Sagar",
+    amount: 33391,
+    time: "almost 2 years ago",
+    avatar: "A",
+  },
+  {
+    name: "Ribhav Soni",
+    amount: 33280,
+    time: "over 1 year ago",
+    avatar: "R",
+  },
+];
+
 export const templeInfo = {
   title: "Gupt Vrindavan Dham",
   phone: "+91-97999 99881",

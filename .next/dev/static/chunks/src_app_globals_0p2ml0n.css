@@ -577,6 +577,10 @@
     aspect-ratio: 4 / 5;
   }
 
+  .h-2 {
+    height: calc(var(--spacing) * 2);
+  }
+
   .h-3 {
     height: calc(var(--spacing) * 3);
   }
@@ -665,6 +669,10 @@
     min-height: 100vh;
   }
 
+  .w-2 {
+    width: calc(var(--spacing) * 2);
+  }
+
   .w-3 {
     width: calc(var(--spacing) * 3);
   }
@@ -679,6 +687,10 @@
 
   .w-6 {
     width: calc(var(--spacing) * 6);
+  }
+
+  .w-8 {
+    width: calc(var(--spacing) * 8);
   }
 
   .w-10 {
@@ -739,6 +751,16 @@
 
   .flex-shrink-0 {
     flex-shrink: 0;
+  }
+
+  .-translate-x-16 {
+    --tw-translate-x: calc(var(--spacing) * -16);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+
+  .translate-x-16 {
+    --tw-translate-x: calc(var(--spacing) * 16);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
   }
 
   .-translate-y-1\/2 {
@@ -1063,6 +1085,14 @@
     background-color: lab(35.7147% 34.0219 33.8155 / .4);
   }
 
+  .bg-\[\#d4c4a8\] {
+    background-color: #d4c4a8;
+  }
+
+  .bg-\[\#e8d899\] {
+    background-color: #e8d899;
+  }
+
   .bg-\[\#f2c26a\]\/15 {
     background-color: #f2c26a26;
     background-color: lab(81.4584% 10.4458 50.4511 / .15);
@@ -1309,6 +1339,10 @@
     padding: calc(var(--spacing) * 0);
   }
 
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
+
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
@@ -1550,6 +1584,14 @@
 
   .text-\[\#1a1a1a\] {
     color: #1a1a1a;
+  }
+
+  .text-\[\#1a1a2e\] {
+    color: #1a1a2e;
+  }
+
+  .text-\[\#3d2817\] {
+    color: #3d2817;
   }
 
   .text-\[\#5a1a0f\] {
@@ -1947,6 +1989,18 @@
   }
 
   @media (hover: hover) {
+    .hover\:bg-\[\#8b3a1f\]:hover {
+      background-color: #8b3a1f;
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:bg-\[\#e8d899\]:hover {
+      background-color: #e8d899;
+    }
+  }
+
+  @media (hover: hover) {
     .hover\:bg-\[\#f0dec0\]:hover {
       background-color: #f0dec0;
     }
@@ -2003,6 +2057,12 @@
   @media (hover: hover) {
     .hover\:text-\[\#9c4318\]:hover {
       color: #9c4318;
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:text-white:hover {
+      color: var(--color-white);
     }
   }
 
@@ -2152,6 +2212,12 @@
   @media (min-width: 40rem) {
     .sm\:py-14 {
       padding-block: calc(var(--spacing) * 14);
+    }
+  }
+
+  @media (min-width: 40rem) {
+    .sm\:py-20 {
+      padding-block: calc(var(--spacing) * 20);
     }
   }
 
