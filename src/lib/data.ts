@@ -109,6 +109,33 @@ export const akshayaTritiyaDaan = [
   },
 ];
 
+export const importanceCarouselItems = [
+  {
+    image:
+      "https://images.unsplash.com/photo-1578926078328-123456789012?auto=format&fit=crop&w=600&q=80",
+    sanskritTitle: "कृपभदेवस्य व्रतश्यान्त:",
+    description: "The vows and observances of Lord Krishna's grace during Akshaya Tritiya.",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1578926078328-123456789013?auto=format&fit=crop&w=600&q=80",
+    sanskritTitle: "अनुप्रणा देवी प्राद्भवित:",
+    description: "The divine blessings of Mother Annapurna manifest on this sacred day.",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1578926078328-123456789014?auto=format&fit=crop&w=600&q=80",
+    sanskritTitle: "त्रेतायुग्य शुभ आरम्भ:",
+    description: "The auspicious beginning of the Treta Yuga under divine guidance.",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1578926078328-123456789015?auto=format&fit=crop&w=600&q=80",
+    sanskritTitle: "कुबेरस्य धनदेवलेन निपुणिकित:",
+    description: "Kuber's blessings for eternal prosperity and spiritual wealth.",
+  },
+];
+
 export const templeInfo = {
   title: "Gupt Vrindavan Dham",
   phone: "+91-97999 99881",

@@ -3,3 +3,8 @@
 {"timestamp":"00:00:00.545","source":"Server","level":"LOG","message":"  ✓ transitionIndicator"}
 {"timestamp":"00:00:00.545","source":"Server","level":"LOG","message":"  ⨯ turbopackFileSystemCacheForDev"}
 {"timestamp":"00:00:00.545","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:18.408","source":"Server","level":"LOG","message":"  Reload env: .env.development.local"}
+{"timestamp":"00:02:22.607","source":"Server","level":"LOG","message":"✓ Compiled in 25ms"}
+{"timestamp":"00:02:33.751","source":"Server","level":"LOG","message":"✓ Compiled in 42ms"}
+{"timestamp":"00:02:40.171","source":"Server","level":"LOG","message":"✓ Compiled in 84ms"}
+{"timestamp":"00:02:50.132","source":"Server","level":"LOG","message":"  Reload env: .env.development.local"}
