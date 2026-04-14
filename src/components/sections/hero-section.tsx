@@ -1,9 +1,11 @@
 import Image from "next/image";
 import { ArrowDown, Sparkles } from "lucide-react";
+import { motion } from "framer-motion";
 
 import { templeInfo } from "@/lib/data";
 import { Button } from "@/components/ui/button";
 import { DonationCard } from "@/components/sections/donation-card";
+import { fadeInUp, slideInLeft, slideInRight } from "@/lib/animations";
 
 export function HeroSection() {
   return (
@@ -21,15 +23,20 @@ export function HeroSection() {
       </div>
 
       <div className="relative mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
-        <div className="mb-8 flex items-center justify-between rounded-full border border-white/15 bg-black/18 px-4 py-2 text-white/90 backdrop-blur md:max-w-max">
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          className="mb-8 flex items-center justify-between rounded-full border border-white/15 bg-black/18 px-4 py-2 text-white/90 backdrop-blur md:max-w-max"
+        >
           <div className="flex items-center gap-2 text-xs font-medium uppercase tracking-[0.26em] sm:text-sm">
             <Sparkles className="h-4 w-4 text-[#ffd37a]" />
             Akshaya Tritiya 2026 Donation
           </div>
-        </div>
+        </motion.div>
 
         <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_430px] lg:gap-10">
-          <div className="max-w-3xl pt-2 text-white lg:py-10">
+          <motion.div {...slideInLeft} className="max-w-3xl pt-2 text-white lg:py-10">
             <div className="inline-flex items-center rounded-full border border-[#ffd188]/35 bg-[#f2c26a]/15 px-4 py-2 text-xs font-semibold uppercase tracking-[0.26em] text-[#ffe2a8]">
               Offer Seva and Daan that never diminishes
             </div>
@@ -68,11 +75,11 @@ export function HeroSection() {
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
 
-          <div className="lg:sticky lg:top-6">
+          <motion.div {...slideInRight} className="lg:sticky lg:top-6">
             <DonationCard />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

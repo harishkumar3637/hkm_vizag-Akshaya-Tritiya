@@ -76,6 +76,141 @@ export const recentDonors = [
   { name: "Ankit Goyal", amount: 2100, time: "58 min ago" },
 ];
 
+export const akshayaTritiyaDaan = [
+  {
+    title: "Akshaya Tritiya Seva",
+    image:
+      "https://images.unsplash.com/photo-1585521537854-ad159a1f1df1?auto=format&fit=crop&w=400&q=80",
+  },
+  {
+    title: "Gau Seva",
+    image:
+      "https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=400&q=80",
+  },
+  {
+    title: "Mandir Nirman Seva",
+    image:
+      "https://images.unsplash.com/photo-1563953971-ab6dc87a9f0d?auto=format&fit=crop&w=400&q=80",
+  },
+  {
+    title: "Chandan Alankar Seva",
+    image:
+      "https://images.unsplash.com/photo-1585521537854-ad159a1f1df1?auto=format&fit=crop&w=400&q=80",
+  },
+  {
+    title: "Khichdi Vitaran Seva",
+    image:
+      "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80",
+  },
+  {
+    title: "Annadana Seva",
+    image:
+      "https://images.unsplash.com/photo-1517244683847-7456b63c5969?auto=format&fit=crop&w=400&q=80",
+  },
+];
+
+export const importanceCarouselItems = [
+  {
+    image:
+      "https://images.unsplash.com/photo-1578926078328-123456789012?auto=format&fit=crop&w=600&q=80",
+    sanskritTitle: "कृपभदेवस्य व्रतश्यान्त:",
+    description: "The vows and observances of Lord Krishna's grace during Akshaya Tritiya.",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1578926078328-123456789013?auto=format&fit=crop&w=600&q=80",
+    sanskritTitle: "अनुप्रणा देवी प्राद्भवित:",
+    description: "The divine blessings of Mother Annapurna manifest on this sacred day.",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1578926078328-123456789014?auto=format&fit=crop&w=600&q=80",
+    sanskritTitle: "त्रेतायुग्य शुभ आरम्भ:",
+    description: "The auspicious beginning of the Treta Yuga under divine guidance.",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1578926078328-123456789015?auto=format&fit=crop&w=600&q=80",
+    sanskritTitle: "कुबेरस्य धनदेवलेन निपुणिकित:",
+    description: "Kuber's blessings for eternal prosperity and spiritual wealth.",
+  },
+];
+
+export const respectedContributors = [
+  {
+    name: "Yogya Modi",
+    amount: 140000,
+    time: "about 2 years ago",
+    avatar: "Y",
+  },
+  {
+    name: "Akshat Punjlaut",
+    amount: 85000,
+    time: "over 1 year ago",
+    avatar: "A",
+  },
+  {
+    name: "akshay ghugal",
+    amount: 75000,
+    time: "4 months ago",
+    avatar: "a",
+  },
+  {
+    name: "Shivam Gupta",
+    amount: 52040,
+    time: "12 months ago",
+    avatar: "S",
+  },
+  {
+    name: "ABHISHEK RANJAN",
+    amount: 50000,
+    time: "3 months ago",
+    avatar: "A",
+  },
+  {
+    name: "Ravi Krishnamoorthy",
+    amount: 50000,
+    time: "about 1 year ago",
+    avatar: "R",
+  },
+  {
+    name: "Kapil Vidhani",
+    amount: 52040,
+    time: "12 months ago",
+    avatar: "K",
+  },
+  {
+    name: "Dayanidhi Mishra",
+    amount: 51100,
+    time: "about 1 year ago",
+    avatar: "D",
+  },
+  {
+    name: "Mrs Vasantben Natwarlal Tailo",
+    amount: 35000,
+    time: "4 months ago",
+    avatar: "M",
+  },
+  {
+    name: "Atul Kumar Tawakley",
+    amount: 33673,
+    time: "about 1 year ago",
+    avatar: "A",
+  },
+  {
+    name: "Anand Sagar",
+    amount: 33391,
+    time: "almost 2 years ago",
+    avatar: "A",
+  },
+  {
+    name: "Ribhav Soni",
+    amount: 33280,
+    time: "over 1 year ago",
+    avatar: "R",
+  },
+];
+
 export const templeInfo = {
   title: "Gupt Vrindavan Dham",
   phone: "+91-97999 99881",
